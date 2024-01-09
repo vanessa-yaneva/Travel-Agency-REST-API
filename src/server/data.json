@@ -1,0 +1,51 @@
+{
+  "locations": [
+    {
+      "id": 1704486018760,
+      "street": "Street Test",
+      "number": "2",
+      "city": "Rakitovo",
+      "country": "Bulgaria"
+    },
+    {
+      "id": 1704830113948,
+      "street": "Street5",
+      "number": "23",
+      "city": "Plovdiv",
+      "country": "Bulgaria"
+    }
+  ],
+  "holidays": [
+    {
+      "id": 1704837546083,
+      "title": "Holi Doly Molly",
+      "startDate": "2024-01-17",
+      "duration": 4,
+      "price": 10,
+      "freeSlots": 2,
+      "location": {
+        "id": 1704486018760,
+        "street": "Street Test",
+        "number": "2",
+        "city": "Rakitovo",
+        "country": "Bulgaria"
+      }
+    },
+    {
+      "id": 1704837689567,
+      "title": "Benny Zaeka",
+      "startDate": "2024-02-08",
+      "duration": 66,
+      "price": "20",
+      "freeSlots": 65,
+      "location": {
+        "id": 1704486018760,
+        "street": "Street Test",
+        "number": "2",
+        "city": "Rakitovo",
+        "country": "Bulgaria"
+      }
+    }
+  ],
+  "reservations": []
+}

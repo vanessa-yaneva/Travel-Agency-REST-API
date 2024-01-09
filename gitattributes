@@ -1,0 +1,13 @@
+# Set the default behavior, in case users don't have core.autocrlf set.
+
+- text=auto
+
+# Explicitly declare text files that should always use LF line endings.
+
+_.js text eol=lf
+_.json text eol=lf
+
+# Define binary files - these should not be modified with line endings
+
+_.png binary
+_.jpg binary
