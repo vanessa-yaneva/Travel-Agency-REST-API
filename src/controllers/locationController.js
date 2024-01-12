@@ -39,7 +39,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   const data = readData();
   const newLocation = {
-    id: Date.now(), // simple ID generation
+    id: Date.now(),
     ...req.body,
   };
   data.locations.push(newLocation);

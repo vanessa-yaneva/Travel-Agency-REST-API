@@ -3,7 +3,7 @@
     {
       "id": 1704486018760,
       "street": "Street Test",
-      "number": "2",
+      "number": "3",
       "city": "Rakitovo",
       "country": "Bulgaria"
     },
@@ -18,7 +18,7 @@
   "holidays": [
     {
       "id": 1704837546083,
-      "title": "Holi Doly Molly",
+      "title": "Holi Doly",
       "startDate": "2024-01-17",
       "duration": 4,
       "price": 10,

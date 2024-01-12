@@ -32,6 +32,7 @@ const updateReservation = (
 
   return reservations[reservationIndex];
 };
+
 // GET all reservations
 router.get("/reservations", (req, res) => {
   const data = readData();

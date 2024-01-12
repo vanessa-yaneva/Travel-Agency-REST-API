@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const router = express.Router();
 
-// File path for data.json
+// File path
 const dataFilePath = path.join(__dirname, "..", "server", "data.json");
 
 // Helper function to read data from data.json
@@ -59,6 +59,7 @@ const getFilteredHolidays = (query, holidays) => {
 
   return holidays;
 };
+
 // GET all holidays
 router.get("/", (req, res) => {
   let data = readData();
@@ -67,6 +68,7 @@ router.get("/", (req, res) => {
 
   res.json(filteredHolidays);
 });
+
 // GET a single holiday by id
 router.get("/:id", (req, res) => {
   const data = readData();
@@ -89,9 +91,7 @@ router.post("/", (req, res) => {
   );
 
   if (!locationAsObject) {
-    return res
-      .status(404)
-      .send(`Location with ID: ${locationAsObject.id} not found`);
+    return res.status(404).send(`Location not found`);
   }
 
   let newHoliday = {
@@ -125,7 +125,7 @@ router.put("/", (req, res) => {
     (x) => x.id === parseInt(location)
   );
   if (!selectedLocationObject) {
-    return res.status(404).send(`Location not found for ID: ${location}`);
+    return res.status(404).send(`Location not found`);
   }
 
   let body = { title, startDate, duration, price, freeSlots };
